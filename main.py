@@ -1,20 +1,12 @@
-##### Lesson 1: Intro
+# Lesson 1: Intro
 
 # from PySide6.QtWidgets import QApplication, QWidget
-
 # import sys
-
 # app = QApplication(sys.argv)
-
 # window = QWidget()
 # window.show()
-
 # app.exec()
-
-
-
-
-##### Lesson 2: separating in the classes!!!
+# Lesson 2: separating in the classes!!!
 
 # from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
@@ -32,7 +24,7 @@
 # window.show()
 # app.exec()
 
-## We can separate the previous messy global scope code into clases, for example:
+#  can separate the previous messy global scope code into clases, for example:
 
 # import sys
 # from PySide6.QtWidgets import QApplication, QPushButton, QMainWindow
@@ -51,8 +43,8 @@
 # window.show()
 # app.exec()
 
-## We can also save the whole button class in a different file and then import 
-## from there!!!
+# We can also save the whole button class in a different file and then import
+# from there!!!
 
 # import sys
 # from PySide6.QtWidgets import QApplication
@@ -63,14 +55,14 @@
 # window.show()
 # app.exec()
 
-##### Lesson 3: Signals and Slots !!
+# Lesson 3: Signals and Slots !!
 
 # import sys
 # from PySide6.QtWidgets import QApplication
 # from button_holder import ButtonHolder
 
 # balance = 1
-# def button_clicked(data): # in data checks if button is clicked/unclicked (checked/unchecked)
+# def button_clicked(data): #checks if button is clicked/unclicked
 #     global balance
 #     balance += 1
 #     print(f"Current Balance: ${balance}.00 USD", data)
@@ -82,13 +74,15 @@
 # window.show()
 # app.exec()
 
-## QtCore and QSlider
+# QtCore and QSlider
 
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QApplication, QSlider
 
+
 def respond_to_slider(data):
     print(f"Slider moved to: {data}")
+
 
 app = QApplication()
 slider = QSlider(Qt.Horizontal)
